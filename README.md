@@ -29,7 +29,7 @@ A pesar del desarrollo en curso de un sistema de merituación por parte de los r
 •	Análisis predictivo: El modelo puede generar insights valiosos sobre la demanda de docentes en distintas áreas, facilitando la toma de decisiones estratégicas para la planificación e implementación de nuevas modalidades educativas.
 
 #### •	Tipo de Problema y Modelos de ML
-El problema principal es de clasificación: la variable objetivo es caracter, con clases "D" (Docente), "H" (Habilitante), "S" (Suplente). También puede expandirse a un problema de recomendación (opcional en versiones futuras del proyecto). Para ello, como opción podría usar Random Forest, como así también SVM (Support Vector Machine).
+El problema principal es de clasificación: la variable objetivo es caracter, con clases "D" (Docente), "H" (Habilitante), "S" (Supletorio). También puede expandirse a un problema de recomendación (opcional en versiones futuras del proyecto). Para ello, como opción podría usar Modelos de regresion logistica, o Random Forest, como así también SVM (Support Vector Machine).
 
 ## Project Organization
 
