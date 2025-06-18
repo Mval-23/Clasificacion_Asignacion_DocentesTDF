@@ -33,8 +33,8 @@ Los datos fueron provistos por la Junta de Clasificación y Disciplina de Educac
 **Nombre del archivo**: `dataset_jcyd_ok.xlsx`  
 **Cantidad de registros**: 52.936  
 **Columnas**: 16  
-**Fuente**: Junta de Clasificación, ciudad de Río Grande.  
-**Adquisición**: Mediante autorización oficial (ver informe en PDF).
+**Fuente**: Junta de Clasificación y Disciplina de Educación Secundari, ciudad de Río Grande.  
+**Adquisición**: Mediante autorización de la Secretaria de Gestión Educativa.
 
 
 ## Contenido del Repositorio
@@ -91,8 +91,9 @@ Se implementaron y compararon tres modelos principales:
 - Regresión Logística Multiclase
 - Árbol de Decisión
 - Random Forest
-- 
+  
 **Entrenamiento/Test:** División 80/20 con estratificación.
+
 **Preprocesamiento:** One-Hot Encoding para variables categóricas.
 
 
