@@ -2,6 +2,7 @@
 ## TECNICATURA SUPERIOR EN CIENCIA DE DATOS E INTELIGENCIA ARTIFICIAL
 ## APRENDIZAJE AUTOMATICO
 
+# INFORME FINAL
 # Proyecto de Aprendizaje Automático:  Clasificación y Asignación de Docentes con Aprendizaje Automático
 
 Este proyecto aplica técnicas de aprendizaje automático para automatizar la clasificación de docentes aspirantes en el nivel secundario, con el objetivo de mejorar la eficiencia, transparencia y equidad en los procesos de asignación docente.
@@ -118,17 +119,5 @@ Se implementaron y compararon tres modelos principales:
 ## Conclusión Final
 El modelo desarrollado cumple el objetivo general de automatizar y optimizar la clasificación docente. El sistema podría aplicarse para asistir a la Junta de Clasificación, reducir errores humanos, y acelerar los procesos. 
 
-## 🚀 Recomendaciones Futuras
 
-- Implementar optimización de hiperparámetros.
-- Agregar interpretabilidad del modelo (ej: SHAP).
-- Construir dashboard interactivo para uso institucional.
-
----
-
-> Realizado por: **Demari Monica Valeria**
-
-> Tecnicatura Superior en Ciencia de Datos e Inteligencia Artificial
-
-> Profesor: **Lic. Martin Mirabete**
 
