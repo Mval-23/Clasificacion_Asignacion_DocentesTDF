@@ -102,9 +102,9 @@ Se implementaron y compararon tres modelos principales:
 
 | Modelo              | Precisión | Recall | F1-Score | Accuracy |
 | ------------------- | --------- | ------ | -------- | -------- |
-| Regresión Logística | 0.88      | 0.85   | 0.75     | 0.84     |
-| Árbol de Decisión   | 0.86      | 0.87   | 0.74     | 0.84     |
-| Random Forest       | 0.88      | 0.88   | 0.75     | 0.85     |
+| Regresión Logística | 0.79      | 0.78   | 0.78     | 0.78     |
+| Árbol de Decisión   | 0.74      | 0.73   | 0.73     | 0.73     |
+| Random Forest       | 0.83      | 0.82   | 0.82     | 0.82     |
 
 
 
@@ -113,15 +113,12 @@ Se implementaron y compararon tres modelos principales:
 - El modelo Random Forest ofreció el mejor desempeño general, siendo capaz de predecir adecuadamente las tres categorías.
 
 - Se evidenció una alta correlación entre título, institución y el carácter docente asignado.
-  
-- Es el más confiable para ayudar a la Junta a automatizar la clasificación docente.
 
-- La versión especializada de regresión logística por espacio con pocos datos permitió detectar qué espacios curriculares presentan escasez de aspirantes con títulos adecuados. Esto se evidenció al analizar los espacios que contaban con menos de 100 registros: muchos de ellos no tienen suficientes docentes que, según el modelo, puedan ser clasificados como "Docente" o "Habilitante". 
+- La versión especializada de regresión logística por espacio con pocos datos permitió mantener una buena tasa de predicción incluso en condiciones de escasez de datos, sin embargo esto nos indica la falta de aspirantes para cubrir dichos espacios y/o cargos.
 
 
 ## Conclusión Final
-El modelo Random Forest es el mejor para este problema porque tiene el mejor rendimiento general en las tres clases, y la mayor precisión total. Es el más confiable para ayudar a la Junta a automatizar la clasificación docente. El sistema podría aplicarse para asistir a la Junta de Clasificación, reducir errores humanos, y acelerar los procesos. 
-Asimismmo, ante una brecha entre la oferta académica de formación docente y la demanda real del sistema educativo para esos espacios, la aplicación de dichos modelos puede generar alertas y recomendaciones para políticas educativas.
+El modelo desarrollado cumple el objetivo general de automatizar y optimizar la clasificación docente. El sistema podría aplicarse para asistir a la Junta de Clasificación, reducir errores humanos, y acelerar los procesos. 
 
 
 

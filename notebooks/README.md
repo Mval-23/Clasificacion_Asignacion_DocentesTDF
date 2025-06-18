@@ -45,7 +45,7 @@
         Evaluación de la precisión del modelo utilizando métricas estándar
 
 ## 6-Regresion_Logistica_Por_Espacio_Poco_Dato.ipynb
-### •	Descripción: Este notebook entrena el modelo de aprendizaje automático para predecir el Carácter del titulo, como Docente, Habilitante o Supletorio según el titulo, la institución emisora (nombre) y el espacio curricular (desc_espacio)
+### •	Descripción: En este notebook abordé un análisis más específico: aplicar la regresión logística en aquellos espacios curriculares con pocos registros (menos de 100), con el fin de detectar qué espacios curriculares presentan escasez de aspirantes con títulos adecuados.
 ### •	Pasos importantes:
         Entrenamiento del modelo de Random Forest
         Evaluación de la precisión del modelo utilizando métricas estándar
