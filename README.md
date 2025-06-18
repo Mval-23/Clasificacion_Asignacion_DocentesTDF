@@ -31,38 +31,66 @@ A pesar del desarrollo en curso de un sistema de merituación por parte de los r
 #### •	Tipo de Problema y Modelos de ML
 El problema principal es de clasificación: la variable objetivo es caracter, con clases "D" (Docente), "H" (Habilitante), "S" (Supletorio). También puede expandirse a un problema de recomendación (opcional en versiones futuras del proyecto). Para ello, como opción podría usar Modelos de regresion logistica, o Random Forest, como así también SVM (Support Vector Machine).
 
+## Estructura del Proyecto
+El proyecto sigue una estructura organizada en carpetas, diseñada para almacenar y procesar los datos de manera eficiente. A continuación se describe la organización principal del repositorio:
+
+| Carpeta                       | Archivo                                                   | Descripción                                                 |
+|-------------------------------|-----------------------------------------------------------|-------------------------------------------------------------|
+|    Data                       | `Readme`                                                  | Estructura de la carpeta "data"                             |
+|    Data/Raw                   | `dataset_jcyd_ok.xlsx`                                    | Dataset original                                            |
+|    Data/processed             | `dataset_docentes_etl.csv`                                | Dataset procesado                                           |
+|-------------------------------|-----------------------------------------------------------|-------------------------------------------------------------|  
+|    docs                       | `README.md`                                               | Enlace del video                                            |
+|    docs/docs                  | `README.md`                                               | Informe final                                               |
+|    docs/docs                  | `A-FORO -Dominios de interés para el parcial.pdf`         | Documento PDF informado en Foro del campus                  |
+|    docs/docs                  | `B-Entrega 1- Descripción y Formulación del Objetivo.pdf` | Documento PDF presentado en el campus                       |
+|    docs/docs                  | `C-Entrega 2- Descripción del Dataset y Origen.pdf`       | Documento PDF ipresentado en el campus                      |
+|    docs/docs                  | `README_Entrega_2.md `                                    | Descripción del Dataset y Origen                            |
+|-------------------------------|-----------------------------------------------------------|-------------------------------------------------------------| 
+|    noteooks                   | `Readme`                                                  | Estructura de la carpeta "notebook"                         |
+|    noteooks                   | `1-Descripción del dataset.ipynb`                         | Acceso y descripción completa del dataset                   |
+|    noteooks                   | `2-Limpieza y Tratamiento de Datos .ipynb`                | Proceso ETL                                                 |
+|    noteooks                   | `3-Modelo_Regresion_Logistica.ipynb`                      | Notebook con modelo de Regresion Logística y visualizaciones|
+|    noteooks                   | `4-Arbol_Decision.ipynb`                                  | Notebook con modelo de árbol de decisión                    |
+|    noteooks                   | `5-Modelo_Random_Forest.ipynb`                            | Notebook con modelo                     |
+|    noteooks                   | `6-Regresion_Logistica_Por_Espacio_Poco_Dato .ipynb`      | Notebook de regresión aplicada a espacios con pocos datos   |
+|                                     | `video_explica_modelo.mp4`                  | Video de presentación del proyecto                          |
+|                                     | `README.`dataset_jcyd_ok.xlsx`md`                         | Este archivo                                                |
+
 ## Project Organization
 
 ```
-├── LICENSE            <- Open-source license if one is chosen
-├── Makefile           <- Makefile with convenience commands like `make data` or `make train`
-├── README.md          <- The top-level README for developers using this project.
+├── LICENSE            <- Licencia de código abierto si se elige una
+├── Makefile           <- Makefile con comandos de conveniencia como `make data` o `make train`
+├── README.md          <- README de nivel superior para desarrolladores que utilizan este proyecto..
 ├── data
-│   ├── external       <- Data from third party sources.
-│   ├── interim        <- Intermediate data that has been transformed.
-│   ├── processed      <- The final, canonical data sets for modeling.
-│   └── raw            <- The original, immutable data dump.
+│   ├── external       <- Datos de fuentes de terceros.
+│   ├── interim        <- Datos intermedios que han sido transformados
+│   ├── processed      <- Los conjuntos de datos finales y canónicos para modelado.
+│   │      └── dataset_docentes_etl.csv       <- Archivo csv limpio para el posterior modelo de machine learning.
+│   └── raw            <- Documento original e inmutable de datos
+│   │      └── dataset_jcyd_ok.xlsx           <- Archivo excel con los datos de aspirantes inscrptos en la JCYDES.
 │
-├── docs               <- A default mkdocs project; see www.mkdocs.org for details
+├── docs               <- Documentacion del proyecto; ver www.mkdocs.org para más detalles
 │
-├── models             <- Trained and serialized models, model predictions, or model summaries
+├── models             <- Modelos entrenados y serializados, predicciones de modelos o resúmenes de modelos
 │
-├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
-│                         the creator's initials, and a short `-` delimited description, e.g.
-│                         `1.0-jqp-initial-data-exploration`.
+├── notebooks          <- Notebooks de Jupyter. La convención de nombres es un número (para ordenar),
+│                         las iniciales del creador y una breve descripción delimitada por guiones, por ejemplo,
+│                         `1.0-jqp-exploración-inicial-de-datos`.
 │
-├── pyproject.toml     <- Project configuration file with package metadata for 
-│                         Clasificacion_Asignacion_DocentesTDF and configuration for tools like black
+├── pyproject.toml     <- Archivo de configuración del proyecto con metadatos del paquete para 
+│                         Clasificacion_Asignacion_DocentesTDF y configuración para herramientas como black.
 │
-├── references         <- Data dictionaries, manuals, and all other explanatory materials.
+├── references         <- Diccionarios de datos, manuales y otros materiales explicativos.
 │
-├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
-│   └── figures        <- Generated graphics and figures to be used in reporting
+├── reports            <- Análisis generado como HTML, PDF, LaTeX, etc.
+│   └── figures        <- Gráficos y figuras generados para ser utilizados en informes
 │
-├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
-│                         generated with `pip freeze > requirements.txt`
+├── requirements.txt   <- Archivo de requisitos para reproducir el entorno de análisis, por ejemplo,
+│                         generado con `pip freeze > requirements.txt`
 │
-├── setup.cfg          <- Configuration file for flake8
+├── setup.cfg          <- Archivo de configuración para flake8
 │
 └── Clasificacion_Asignacion_DocentesTDF   <- Source code for use in this project.
     │
