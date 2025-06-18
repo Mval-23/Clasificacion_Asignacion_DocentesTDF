@@ -38,15 +38,13 @@ El proyecto sigue una estructura organizada en carpetas, diseñada para almacena
 |-------------------------------|-----------------------------------------------------------|-------------------------------------------------------------|
 |    Data                       | `Readme`                                                  | Estructura de la carpeta "data"                             |
 |    Data/Raw                   | `dataset_jcyd_ok.xlsx`                                    | Dataset original                                            |
-|    Data/processed             | `dataset_docentes_etl.csv`                                | Dataset procesado                                           |
-|-------------------------------|-----------------------------------------------------------|-------------------------------------------------------------|  
+|    Data/processed             | `dataset_docentes_etl.csv`                                | Dataset procesado                                           |  
 |    docs                       | `README.md`                                               | Enlace del video                                            |
 |    docs/docs                  | `README.md`                                               | Informe final                                               |
 |    docs/docs                  | `A-FORO -Dominios de interés para el parcial.pdf`         | Documento PDF informado en Foro del campus                  |
 |    docs/docs                  | `B-Entrega 1- Descripción y Formulación del Objetivo.pdf` | Documento PDF presentado en el campus                       |
 |    docs/docs                  | `C-Entrega 2- Descripción del Dataset y Origen.pdf`       | Documento PDF ipresentado en el campus                      |
 |    docs/docs                  | `README_Entrega_2.md `                                    | Descripción del Dataset y Origen                            |
- 
 |    noteooks                   | `Readme`                                                  | Estructura de la carpeta "notebook"                         |
 |    noteooks                   | `1-Descripción del dataset.ipynb`                         | Acceso y descripción completa del dataset                   |
 |    noteooks                   | `2-Limpieza y Tratamiento de Datos .ipynb`                | Proceso ETL                                                 |
