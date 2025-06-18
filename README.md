@@ -46,16 +46,15 @@ El proyecto sigue una estructura organizada en carpetas, diseñada para almacena
 |    docs/docs                  | `B-Entrega 1- Descripción y Formulación del Objetivo.pdf` | Documento PDF presentado en el campus                       |
 |    docs/docs                  | `C-Entrega 2- Descripción del Dataset y Origen.pdf`       | Documento PDF ipresentado en el campus                      |
 |    docs/docs                  | `README_Entrega_2.md `                                    | Descripción del Dataset y Origen                            |
-|-------------------------------|-----------------------------------------------------------|-------------------------------------------------------------| 
+ 
 |    noteooks                   | `Readme`                                                  | Estructura de la carpeta "notebook"                         |
 |    noteooks                   | `1-Descripción del dataset.ipynb`                         | Acceso y descripción completa del dataset                   |
 |    noteooks                   | `2-Limpieza y Tratamiento de Datos .ipynb`                | Proceso ETL                                                 |
 |    noteooks                   | `3-Modelo_Regresion_Logistica.ipynb`                      | Notebook con modelo de Regresion Logística y visualizaciones|
 |    noteooks                   | `4-Arbol_Decision.ipynb`                                  | Notebook con modelo de árbol de decisión                    |
-|    noteooks                   | `5-Modelo_Random_Forest.ipynb`                            | Notebook con modelo                     |
+|    noteooks                   | `5-Modelo_Random_Forest.ipynb`                            | Notebook con modelo Random forest                           |
 |    noteooks                   | `6-Regresion_Logistica_Por_Espacio_Poco_Dato .ipynb`      | Notebook de regresión aplicada a espacios con pocos datos   |
-|                                     | `video_explica_modelo.mp4`                  | Video de presentación del proyecto                          |
-|                                     | `README.`dataset_jcyd_ok.xlsx`md`                         | Este archivo                                                |
+
 
 ## Project Organization
 
