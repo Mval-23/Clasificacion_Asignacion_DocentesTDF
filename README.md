@@ -54,6 +54,10 @@ El proyecto sigue una estructura organizada en carpetas, diseñada para almacena
 |    noteooks                   | `6-Regresion_Logistica_Por_Espacio_Poco_Dato .ipynb`      | Notebook de regresión aplicada a espacios con pocos datos   |
 
 
+## Video del proyecto
+
+https://drive.google.com/file/d/1CqgWpa99TKnsqTO8opnmHb-owzpIfHCO/view?usp=sharing
+
 ## Project Organization
 
 ```
