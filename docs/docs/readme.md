@@ -37,7 +37,7 @@ Los datos fueron provistos por el equipo informático de la Junta de Clasificaci
 **Adquisición**: Mediante autorización de la Secretaria de Gestión Educativa.
 
 |Nombre de columna |Entradas|	         Tipo de datos                       |	      Descripción                                                            |
-|------------------|--------|------------------------------------------------|----------------|--------------------------------------------------------------|
+|------------------|--------|------------------------------------------------|------------------------------------------------------------------------------|
 |idespacio         | 52,936 | tipo entero (int64).                           |	Clave de identidad del Espacio curricular                                    |
 |Idtitulo          | 52,936 | tipo objeto (string).                          |	Clave de identidad del Título                                                |
 |idtitulo_real     |  52,936| tipo entero (int64).                           |	Clave de identidad del Título según los datos del título y la casa de estudio|
@@ -59,6 +59,7 @@ Los datos fueron provistos por el equipo informático de la Junta de Clasificaci
 
 
 ## Contenido del Repositorio
+
 | Carpeta                       | Archivo                                                   | Descripción                                                 |
 |-------------------------------|-----------------------------------------------------------|-------------------------------------------------------------|
 |    Data                       | `Readme`                                                  | Estructura de la carpeta "data"                             |
