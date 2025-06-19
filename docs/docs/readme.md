@@ -26,7 +26,7 @@ Basándose en los siguientes atributos:
 
 ## Origen de los Datos
 
-Los datos fueron provistos por la Junta de Clasificación y Disciplina de Educación Secundaria de Río Grande, Tierra del Fuego, AeIAS, con previa autorización de la Secretaria de Gestión Educativa, Prof. Silvina Solohaga. Se trabajó sobre un dataset procesado con atributos extraídos del sistema de inscripción docente.
+Los datos fueron provistos por el equipo informático de la Junta de Clasificación y Disciplina de Educación Secundaria de Río Grande, Tierra del Fuego, AeIAS, con previa autorización de la Secretaria de Gestión Educativa, Prof. Silvina Solohaga. Se trabajó sobre un dataset procesado con atributos extraídos del sistema de inscripción docente.
 
 ## Dataset
 
@@ -35,6 +35,20 @@ Los datos fueron provistos por la Junta de Clasificación y Disciplina de Educac
 **Columnas**: 16  
 **Fuente**: Junta de Clasificación y Disciplina de Educación Secundari, ciudad de Río Grande.  
 **Adquisición**: Mediante autorización de la Secretaria de Gestión Educativa.
+
+|Nombre de columna|	Entradas|	Tipo de datos|	Descripción|
+|idespacio|	52,936| 	 tipo entero (int64).|	Clave de identidad del Espacio curricular|
+|Idtitulo|	 52,936 |	 tipo objeto (string).	Clave de identidad del Título
+|idtitulo_real|	  52,936 	 tipo entero (int64).	Clave de identidad del Título conformado entre los datos del título y la casa de estudio
+|Idcasaestudio|	52,936 	 tipo objeto (string)	Clave de identidad de la casa emisora del título
+|Carácter|	 52,936 	  tipo objeto (string).	Nombre que se clasifican los títulos en el espacio curricular
+|idNivel_espacio|	 52,935 |	  tipo flotante (float64) - una entrada es nula.	Clave de identidad del Nivel del Espacio curricular o cargo
+|desc_espacio|	  52,935| 	  tipo objeto (string) - una entrada es nula.	Descripción del Cargo o Espacio curricular
+|tipo_espacio|	  52,935| 	 tipo objeto (string) - una entrada es nula.	Tipo de cargo o espacio curricular
+|ciudad_espacio	|  52,935 |	  tipo flotante (float64) - una entrada es nula.	La ciudad que se encuentra habilitado el cargo o espacio curricular
+|resolucion_espacio|	  52,935 |	  tipo objeto (string) - una entrada es nula.	Resolución del plan de estudio del título relacionado al cargo o espacio ||curricular
+|titulo	 |  52,811 	|  tipo objeto (string) - 125 entradas son nulas.	Nombre del título
+|resolucion|	  50,811 |	  tipo objeto (string) - 2,125 entradas son nulas.	Resolución del plan de estudio del título
 
 
 ## Contenido del Repositorio
@@ -108,7 +122,7 @@ Se implementaron y compararon tres modelos principales:
 
 
 
-## Interpretación de Resultados y Conclusiones
+## Interpretación de Resultados 
 
 - El modelo Random Forest ofreció el mejor desempeño general, siendo capaz de predecir adecuadamente las tres categorías.
 
@@ -120,7 +134,8 @@ Se implementaron y compararon tres modelos principales:
 
 
 ## Conclusión Final
-El modelo Random Forest es el mejor para este problema porque tiene el mejor rendimiento general en las tres clases, y la mayor precisión total. Es el más confiable para ayudar a la Junta a automatizar la clasificación docente. El sistema podría aplicarse para asistir a la Junta de Clasificación, reducir errores humanos, y acelerar los procesos. 
+Como conclusión, todos estos notebooks reflejan el proceso completo de Machine Learning: desde el análisis exploratorio y limpieza, hasta la implementación de distintos modelos y la evaluación de sus desempeños.
+sin embargo, el modelo Random Forest es el mejor para este problema porque tiene el mejor rendimiento general en las tres clases, y la mayor precisión total. Es el más confiable para ayudar a la Junta a automatizar la clasificación docente. El sistema podría aplicarse para asistir a la Junta de Clasificación, reducir errores humanos, y acelerar los procesos. 
 Asimismmo, ante una brecha entre la oferta académica de formación docente y la demanda real del sistema educativo para esos espacios, la aplicación de dichos modelos puede generar alertas y recomendaciones para políticas educativas.
 
 
