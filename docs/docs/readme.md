@@ -1,64 +1,38 @@
 ![Alt text](image.png)
 ## TECNICATURA SUPERIOR EN CIENCIA DE DATOS E INTELIGENCIA ARTIFICIAL
 ## APRENDIZAJE AUTOMATICO
+### Profesor Lic. Martin Mirabete
+### Alumna: Demari Monica Valeria
+# Optimizacion de la Clasificacion y Asignacion de Docentes en Tierra del Fuego utilizando Aprendizaje Automatico
 
-# INFORME FINAL
-# Proyecto de Aprendizaje Automático:  Clasificación y Asignación de Docentes con Aprendizaje Automático
+<a target="_blank" href="https://cookiecutter-data-science.drivendata.org/">
+    <img src="https://img.shields.io/badge/CCDS-Project%20template-328F97?logo=cookiecutter" />
+</a>
 
-Este proyecto aplica técnicas de aprendizaje automático para automatizar la clasificación de docentes aspirantes en el nivel secundario, con el objetivo de mejorar la eficiencia, transparencia y equidad en los procesos de asignación docente.
+El proyecto consiste en optimizar la asignacion y clasificacion de aspirantes inscriptos para ejercer la docencia en el nivel secundario en la educacion secundaria mediante el analisis de datos.
+### Desarrollo
+ #### 	Descripcion del Proyecto
+En este proyecto propongo la implementación de un modelo de aprendizaje automático para optimizar la asignación y clasificación de docentes en el nivel secundario. Ante la creciente disponibilidad de datos y la heterogeneidad en la formación académica de los aspirantes, buscaré automatizar y mejorar la eficacia y equidad de este proceso.
+#### •	Objetivo General:
+El objetivo central de este proyecto es desarrollar un modelo de aprendizaje automático capaz de automatizar y optimizar el proceso de clasificación de los aspirantes inscriptos para ejercer la docencia en el nivel secundario. La clasificación se realizará en las categorías de "Docente", "Habilitante" y "Suplente", tomando como base los títulos académicos y otros atributos relevantes presentes en el conjunto de datos proporcionado por la Junta de Clasificación de Educación Secundaria, y que a su vez proporcione recomendaciones predictivas sobre el espacio curricular más adecuado para cada docente, en base a su formación académica.
+#### • Objetivos Específicos:
+•	Predecir la clasificación docente ("Docente", "Habilitante" o "Suplente") según su título, institución emisora y provincia.
+•	Determinar qué espacios curriculares son los más apropiados para cada docente.
+•	Identificar relaciones y patrones ocultos entre la formación académica y la asignación curricular.
+•	Sugerir recomendaciones alternativas de asignación curricular.
 
-## Autora
-**Demari Monica Valeria**  
-Profesor: Lic. Martin Mirabete
+#### •	Contexto del problema y su relevancia
+Actualmente, el proceso de clasificación de aspirantes para la Junta de Clasificación y Disciplina de Educación Secundaria, crucial para la asignación de espacios curriculares y cargos, se realiza de forma manual. Esto lo hace propenso a errores humanos y consume una considerable cantidad de tiempo y recursos.
+A pesar del desarrollo en curso de un sistema de merituación por parte de los referentes informáticos, como estudiante considero una oportunidad significativa para aplicar técnicas de aprendizaje automático a los datos históricos de inscripción. La implementación de un modelo de aprendizaje automático es altamente relevante, ya que una mejor asignación puede determinar:
+•	Mayor precisión, es decir que reduce la probabilidad de errores en la clasificación, garantizando una asignación docente más justa y eficiente.
+•	Mayor eficiencia: La automatización del proceso acelerará la clasificación de aspirantes, liberando a los miembros de la Junta para otras tareas críticas.
+•	Análisis predictivo: El modelo puede generar insights valiosos sobre la demanda de docentes en distintas áreas, facilitando la toma de decisiones estratégicas para la planificación e implementación de nuevas modalidades educativas.
 
-## Objetivo del Proyecto
+#### •	Tipo de Problema y Modelos de ML
+El problema principal es de clasificación: la variable objetivo es caracter, con clases "D" (Docente), "H" (Habilitante), "S" (Supletorio). También puede expandirse a un problema de recomendación (opcional en versiones futuras del proyecto). Para ello, como opción podría usar Modelos de regresion logistica, o Random Forest, como así también SVM (Support Vector Machine).
 
-Desarrollar un modelo de Aprendizaje Automático capaz de predecir la **clasificación docente** en tres categorías:
-
-- **Docente**
-- **Habilitante**
-- **Supletorio**
-
-Basándose en los siguientes atributos:
-- Título del aspirante
-- Nombre de la casa de estudio y provincia
-- Espacio curricular 
-
-## Origen de los Datos
-
-Los datos fueron provistos por el equipo informático de la Junta de Clasificación y Disciplina de Educación Secundaria de Río Grande, Tierra del Fuego, AeIAS, con previa autorización de la Secretaria de Gestión Educativa, Prof. Silvina Solohaga. Se trabajó sobre un dataset procesado con atributos extraídos del sistema de inscripción docente.
-
-## Dataset
-
-**Nombre del archivo**: `dataset_jcyd_ok.xlsx`  
-**Cantidad de registros**: 52.936  
-**Columnas**: 16  
-**Fuente**: Junta de Clasificación y Disciplina de Educación Secundari, ciudad de Río Grande.  
-**Adquisición**: Mediante autorización de la Secretaria de Gestión Educativa.
-
-|Nombre de columna |Entradas|	         Tipo de datos                       |	      Descripción                                                            |
-|------------------|--------|------------------------------------------------|-------------------------------------------------------------------------------|
-|idespacio         | 52,936 | tipo entero (int64).                           |	Clave de identidad del Espacio curricular                                    |
-|Idtitulo          | 52,936 | tipo objeto (string).                          |	Clave de identidad del Título                                                |
-|idtitulo_real     |  52,936| tipo entero (int64).                           |	Clave de identidad del Título según los datos del título y la casa de estudio|
-|Idcasaestudio     | 52,936 | tipo objeto (string)                           | Clave de identidad de la casa emisora del título                              |
-|Carácter          | 52,936 | tipo objeto (string).                          | Nombre que se clasifican los títulos en el espacio curricular                 |
-|idNivel_espacio   | 52,935 | tipo flotante (float64) - una entrada es nula. | Clave de identidad del Nivel del Espacio curricular o cargo                   |
-|desc_espacio      | 52,935 | tipo objeto (string) - una entrada es nula.    | Descripción del Cargo o Espacio curricular                                    |
-|tipo_espacio      | 52,935 | tipo objeto (string) - una entrada es nula.    | Tipo de cargo o espacio curricular                                            |
-|ciudad_espacio	   | 52,935 | tipo flotante (float64) - una entrada es nula. | La ciudad que se encuentra habilitado el cargo o espacio curricular           |
-|resolucion_espacio| 52,935 | tipo objeto (string) - una entrada es nula.    | Resolución del plan de estudio del título relacionado al espacio curricular   |
-|titulo	           | 52,811 | tipo objeto (string)- 125 entradas son nulas.  |	Nombre del título                                                            |
-|resolucion        | 50,811 | tipo objeto (string)-2,125 entradas son nulas. |	Resolución del plan de estudio del título                                    |
-|nombre	           | 52,695 | tipo objeto (string)- 241 entradas son nulas.	 |  nombre de la casa de estudio que emitió el título                            |
-|facultad          | 14,125 | tipo objeto (string)-38,811 entradas son nulas.|	facultad de la casa de estudio que emitió el título                          |
-|provincia	       | 50,367 | tipo objeto (string)- 2,569 entradas son nulas.|	provincia de la casa de estudio que emitió el título                         |
-|ciudad	           | 42,042 | tipo objeto (string)-10,894 entradas son nulas.|	ciudad de la casa de estudio que emitió el título                            |
-
-
-
-
-## Contenido del Repositorio
+## Estructura del Proyecto
+El proyecto sigue una estructura organizada en carpetas, diseñada para almacenar y procesar los datos de manera eficiente. A continuación se describe la organización principal del repositorio:
 
 | Carpeta                       | Archivo                                                   | Descripción                                                 |
 |-------------------------------|-----------------------------------------------------------|-------------------------------------------------------------|
@@ -80,76 +54,58 @@ Los datos fueron provistos por el equipo informático de la Junta de Clasificaci
 |    noteooks                   | `6-Regresion_Logistica_Por_Espacio_Poco_Dato .ipynb`      | Notebook de regresión aplicada a espacios con pocos datos   |
 
 
-## Análisis Exploratorio (EDA)
+## Project Organization
 
-Se identificaron 3 clases en la variable objetivo:
+```
+├── LICENSE            <- Licencia de código abierto si se elige una
+├── Makefile           <- Makefile con comandos de conveniencia como `make data` o `make train`
+├── README.md          <- README de nivel superior para desarrolladores que utilizan este proyecto..
+├── data
+│   ├── external       <- Datos de fuentes de terceros.
+│   ├── interim        <- Datos intermedios que han sido transformados
+│   ├── processed      <- Los conjuntos de datos finales y canónicos para modelado.
+│   │      └── dataset_docentes_etl.csv       <- Archivo csv limpio para el posterior modelo de machine learning.
+│   └── raw            <- Documento original e inmutable de datos
+│   │      └── dataset_jcyd_ok.xlsx           <- Archivo excel con los datos de aspirantes inscrptos en la JCYDES.
+│
+├── docs               <- Documentacion del proyecto; ver www.mkdocs.org para más detalles
+│
+├── models             <- Modelos entrenados y serializados, predicciones de modelos o resúmenes de modelos
+│
+├── notebooks          <- Notebooks de Jupyter. La convención de nombres es un número (para ordenar),
+│                         las iniciales del creador y una breve descripción delimitada por guiones, por ejemplo,
+│                         `1.0-jqp-exploración-inicial-de-datos`.
+│
+├── pyproject.toml     <- Archivo de configuración del proyecto con metadatos del paquete para 
+│                         Clasificacion_Asignacion_DocentesTDF y configuración para herramientas como black.
+│
+├── references         <- Diccionarios de datos, manuales y otros materiales explicativos.
+│
+├── reports            <- Análisis generado como HTML, PDF, LaTeX, etc.
+│   └── figures        <- Gráficos y figuras generados para ser utilizados en informes
+│
+├── requirements.txt   <- Archivo de requisitos para reproducir el entorno de análisis, por ejemplo,
+│                         generado con `pip freeze > requirements.txt`
+│
+├── setup.cfg          <- Archivo de configuración para flake8
+│
+└── Clasificacion_Asignacion_DocentesTDF   <- Source code for use in this project.
+    │
+    ├── __init__.py             <- Makes Clasificacion_Asignacion_DocentesTDF a Python module
+    │
+    ├── config.py               <- Store useful variables and configuration
+    │
+    ├── dataset.py              <- Scripts to download or generate data
+    │
+    ├── features.py             <- Code to create features for modeling
+    │
+    ├── modeling                
+    │   ├── __init__.py 
+    │   ├── predict.py          <- Code to run model inference with trained models          
+    │   └── train.py            <- Code to train models
+    │
+    └── plots.py                <- Code to create visualizations
+```
 
-- Docente (D): 13.297 registros
-
-- Habilitante (H): 20.355 registros
-
-- Supletorio (S): 19.284 registros
-
-Se analizaron:
-
-Los espacios curriculares: 468 únicos, siendo el más frecuente “Preceptor/a”.
-
-Los títulos únicos: 2.375, el más común fue “Profesor/a de Educación Física”.
-
-Las casas de estudio: múltiples provincias, con una importante cantidad de valores faltantes (notablemente en columnas como facultad, provincia, ciudad).
-
-Se realizaron visualizaciones de:
-
-
-Distribución de la variable objetivo.
-
-Frecuencias de los espacios curriculares y títulos.
-
-Relación entre clasificación y y los 10 espacios curriculares más frecuentes
-
-Porcentaje de valores nulos por columna
-
-Matriz de confusión de los modelos de aprendizaje automático
-
-
-## Modelos de Aprendizaje Automático desarrollados
-
-Se implementaron y compararon tres modelos principales:
-- Regresión Logística Multiclase
-- Árbol de Decisión
-- Random Forest
-  
-**Entrenamiento/Test:** División 80/20 con estratificación.
-
-**Preprocesamiento:** One-Hot Encoding para variables categóricas.
-
-
-
-## Métricas de Evaluación 
-
-| Modelo              | Precisión | Recall | F1-Score | Accuracy |
-| ------------------- | --------- | ------ | -------- | -------- |
-| Regresión Logística | 0.88      | 0.85   | 0.75     | 0.84     |
-| Árbol de Decisión   | 0.86      | 0.87   | 0.74     | 0.84     |
-| Random Forest       | 0.88      | 0.88   | 0.75     | 0.85     |
-
-
-
-## Interpretación de Resultados 
-
-- El modelo Random Forest ofreció el mejor desempeño general, siendo capaz de predecir adecuadamente las tres categorías.
-
-- Se evidenció una alta correlación entre título, institución y el carácter docente asignado.
-  
-- Es el más confiable para ayudar a la Junta a automatizar la clasificación docente.
-
-- La versión especializada de regresión logística por espacio con pocos datos permitió detectar qué espacios curriculares presentan escasez de aspirantes con títulos adecuados. Esto se evidenció al analizar los espacios que contaban con menos de 100 registros: muchos de ellos no tienen suficientes docentes que, según el modelo, puedan ser clasificados como "Docente" o "Habilitante". 
-
-
-## Conclusión Final
-Como conclusión, todos estos notebooks reflejan el proceso completo de Machine Learning: desde el análisis exploratorio y limpieza, hasta la implementación de distintos modelos y la evaluación de sus desempeños.
-sin embargo, el modelo Random Forest es el mejor para este problema porque tiene el mejor rendimiento general en las tres clases, y la mayor precisión total. Es el más confiable para ayudar a la Junta a automatizar la clasificación docente. El sistema podría aplicarse para asistir a la Junta de Clasificación, reducir errores humanos, y acelerar los procesos. 
-Asimismmo, ante una brecha entre la oferta académica de formación docente y la demanda real del sistema educativo para esos espacios, la aplicación de dichos modelos puede generar alertas y recomendaciones para políticas educativas.
-
-
+--------
 
