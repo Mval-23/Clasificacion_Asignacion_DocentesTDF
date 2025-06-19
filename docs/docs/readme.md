@@ -36,19 +36,26 @@ Los datos fueron provistos por el equipo informático de la Junta de Clasificaci
 **Fuente**: Junta de Clasificación y Disciplina de Educación Secundari, ciudad de Río Grande.  
 **Adquisición**: Mediante autorización de la Secretaria de Gestión Educativa.
 
-|Nombre de columna|	Entradas|	Tipo de datos|	Descripción|
-|idespacio|	52,936| 	 tipo entero (int64).|	Clave de identidad del Espacio curricular|
-|Idtitulo|	 52,936 |	 tipo objeto (string).	Clave de identidad del Título
-|idtitulo_real|	  52,936 	 tipo entero (int64).	Clave de identidad del Título conformado entre los datos del título y la casa de estudio
-|Idcasaestudio|	52,936 	 tipo objeto (string)	Clave de identidad de la casa emisora del título
-|Carácter|	 52,936 	  tipo objeto (string).	Nombre que se clasifican los títulos en el espacio curricular
-|idNivel_espacio|	 52,935 |	  tipo flotante (float64) - una entrada es nula.	Clave de identidad del Nivel del Espacio curricular o cargo
-|desc_espacio|	  52,935| 	  tipo objeto (string) - una entrada es nula.	Descripción del Cargo o Espacio curricular
-|tipo_espacio|	  52,935| 	 tipo objeto (string) - una entrada es nula.	Tipo de cargo o espacio curricular
-|ciudad_espacio	|  52,935 |	  tipo flotante (float64) - una entrada es nula.	La ciudad que se encuentra habilitado el cargo o espacio curricular
-|resolucion_espacio|	  52,935 |	  tipo objeto (string) - una entrada es nula.	Resolución del plan de estudio del título relacionado al cargo o espacio ||curricular
-|titulo	 |  52,811 	|  tipo objeto (string) - 125 entradas son nulas.	Nombre del título
-|resolucion|	  50,811 |	  tipo objeto (string) - 2,125 entradas son nulas.	Resolución del plan de estudio del título
+|Nombre de columna |Entradas|	         Tipo de datos                       |	      Descripción                                                            |
+|------------------|--------|------------------------------------------------|----------------|--------------------------------------------------------------|
+|idespacio         | 52,936 | tipo entero (int64).                           |	Clave de identidad del Espacio curricular                                    |
+|Idtitulo          | 52,936 | tipo objeto (string).                          |	Clave de identidad del Título                                                |
+|idtitulo_real     |  52,936| tipo entero (int64).                           |	Clave de identidad del Título según los datos del título y la casa de estudio|
+|Idcasaestudio     | 52,936 | tipo objeto (string)                           | Clave de identidad de la casa emisora del título                              |
+|Carácter          | 52,936 | tipo objeto (string).                          | Nombre que se clasifican los títulos en el espacio curricular                 |
+|idNivel_espacio   | 52,935 | tipo flotante (float64) - una entrada es nula. | Clave de identidad del Nivel del Espacio curricular o cargo                   |
+|desc_espacio      | 52,935 | tipo objeto (string) - una entrada es nula.    | Descripción del Cargo o Espacio curricular                                    |
+|tipo_espacio      | 52,935 | tipo objeto (string) - una entrada es nula.    | Tipo de cargo o espacio curricular                                            |
+|ciudad_espacio	   | 52,935 | tipo flotante (float64) - una entrada es nula. | La ciudad que se encuentra habilitado el cargo o espacio curricular           |
+|resolucion_espacio| 52,935 | tipo objeto (string) - una entrada es nula.    | Resolución del plan de estudio del título relacionado al espacio curricular   |
+|titulo	           | 52,811 | tipo objeto (string)- 125 entradas son nulas.  |	Nombre del título                                                            |
+|resolucion        | 50,811 | tipo objeto (string)-2,125 entradas son nulas. |	Resolución del plan de estudio del título                                    |
+|nombre	           | 52,695 | tipo objeto (string)- 241 entradas son nulas.	 |  nombre de la casa de estudio que emitió el título                            |
+|facultad          | 14,125 | tipo objeto (string)-38,811 entradas son nulas.|	facultad de la casa de estudio que emitió el título                          |
+|provincia	       | 50,367 | tipo objeto (string)- 2,569 entradas son nulas.|	provincia de la casa de estudio que emitió el título                         |
+|ciudad	           | 42,042 | tipo objeto (string)-10,894 entradas son nulas.|	ciudad de la casa de estudio que emitió el título                            |
+
+
 
 
 ## Contenido del Repositorio
