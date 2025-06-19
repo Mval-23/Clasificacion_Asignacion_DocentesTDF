@@ -37,7 +37,7 @@ Los datos fueron provistos por el equipo informático de la Junta de Clasificaci
 **Adquisición**: Mediante autorización de la Secretaria de Gestión Educativa.
 
 |Nombre de columna |Entradas|	         Tipo de datos                       |	      Descripción                                                            |
-|------------------|--------|------------------------------------------------|------------------------------------------------------------------------------|
+|------------------|--------|------------------------------------------------|-------------------------------------------------------------------------------|
 |idespacio         | 52,936 | tipo entero (int64).                           |	Clave de identidad del Espacio curricular                                    |
 |Idtitulo          | 52,936 | tipo objeto (string).                          |	Clave de identidad del Título                                                |
 |idtitulo_real     |  52,936| tipo entero (int64).                           |	Clave de identidad del Título según los datos del título y la casa de estudio|
@@ -100,11 +100,16 @@ Las casas de estudio: múltiples provincias, con una importante cantidad de valo
 
 Se realizaron visualizaciones de:
 
+
 Distribución de la variable objetivo.
 
 Frecuencias de los espacios curriculares y títulos.
 
-Mapas de calor para detección de valores nulos.
+Relación entre clasificación y y los 10 espacios curriculares más frecuentes
+
+Porcentaje de valores nulos por columna
+
+Matriz de confusión de los modelos de aprendizaje automático
 
 
 ## Modelos de Aprendizaje Automático desarrollados
